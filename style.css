@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 93%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .result {
+    margin-top: 100px;
+    width: 300px;
+    background-color: hsl(241, 81%, 54%);
+    text-align: center;
+    color: #dbdbdb;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+.container .result h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.container .result .scores {
+    background-color: hsl(234, 85%, 45%);
+    height: 150px;
+    width: 150px;
+    margin-left: 80px;
+    border-radius: 500px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.container .result .scores h1 {
+    font-size: 50px;
+    color: #fff;
+}
+.container .result .scores h4 {
+    color: hsl(0, 0%, 79%);
+    font-size: 13px;
+}
+.container .result h2 {
+    margin-bottom: 20px;
+}
+.container .result p {
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+}
+.container .summary {
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 100px;
+    height: 420px;
+    padding-left: 20px;
+}
+.container .summary h2 {
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.container .summary img {
+    position: relative;
+    top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.container .summary h4 {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.container .summary strong {
+    margin-left: 80px;
+    color: hsl(224, 30%, 27%);
+}
+.container .summary #over {
+   position: absolute;
+   top: 198px;
+   margin-bottom: 100px;
+   color: hsl(0, 0%, 71%);
+   margin-left: 233px;
+}
+.container .summary strong {
+    margin-left: 80px;
+    color: hsl(224, 30%, 27%);
+}
+.container .summary #strong-1 {
+    margin-left: 86px;
+}
+.container .summary #over-1 {
+    position: absolute;
+    top: 263px;
+    margin-bottom: 100px;
+    color: hsl(0, 0%, 71%);
+    margin-left: 234px;
+}
+.container .summary #strong-2 {
+    margin-left: 102px;
+}
+.container .summary #over-2 {
+    position: absolute;
+    top: 328px;
+    margin-bottom: 100px;
+    color: hsl(0, 0%, 71%);
+    margin-left: 235px;
+}
+.container .summary #strong-3 {
+    margin-left: 102px;
+}
+.container .summary #over-3 {
+    position: absolute;
+    top: 393px;
+    margin-bottom: 100px;
+    color: hsl(0, 0%, 71%);
+    margin-left: 235px;
+}
+.container .summary input {
+    width: 250px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid  hsl(224, 30%, 27%);
+    background-color:  hsl(224, 30%, 27%);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.container .summary input:hover {
+    border: 1px solid transparent;
+    background-color: hsl(234, 85%, 45%);
+}
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attribution a {
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+@media screen and (max-width: 590px) {
+   .container .result {
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+   }
+   .container .summary {
+    position: relative;
+    top: 400px;
+   }
+   .container .summary #over {
+    top: 98px;
+   }
+   .container .summary #over-1 {
+    top: 163px;
+   } 
+   .container .summary #over-2 {
+    top: 228px;
+   }
+   .container .summary #over-3 {
+    top: 293px;
+   }
+
+}
+@media screen and (max-width: 350px) {
+    .container .result {
+        width: 250px;
+    }
+    .container .result .scores {
+        margin-left: 65px;
+        width: 120px;
+        padding-top: 25px;
+        height: 120px;
+    }
+    .container .result p {
+        margin-left: 55px;
+        font-size: 12px;
+        width: 150px;
+    }
+    .container .summary {
+        margin-top: 50px;
+        width: 250px;
+    }
+    .container .summary img {
+        margin-left: 0px;
+    }
+    .container .summary strong {
+        margin-left: 60px;
+        font-size: 13px;
+    }
+    .container .summary #strong-1 {
+        margin-left: 67px;
+        font-size: 13px;
+    }
+    .container .summary #strong-2 {
+        margin-left: 83px;
+        font-size: 13px;
+    } .container .summary #strong-3 {
+        margin-left: 85px;
+        font-size: 13px;
+    }
+    .container .summary #over {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 190px;
+    }
+    .container .summary #over-1 {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 190px;
+    }
+    .container .summary #over-2 {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 190px;
+    }
+    .container .summary #over-3 {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 192px;
+    }
+    .container .summary input {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .container .result {
+        width: 200px;
+    }
+    .container .result .scores {
+        margin-left: 40px;
+    }
+    .container .result p {
+     
+       margin-left: 25px;
+    }
+    .container .summary {
+        width: 200px;
+    }
+    .container .summary h4 {
+        font-size: 13px;
+    }
+    .container .summary strong {
+        margin-left: 30px;
+        font-size: 13px;
+    }
+    .container .summary #strong-1 {
+        margin-left: 37px;
+        font-size: 13px;
+    }
+    .container .summary #strong-2 {
+        margin-left: 48px;
+        font-size: 13px;
+    } .container .summary #strong-3 {
+        margin-left: 50px;
+        font-size: 13px;
+    }
+    .container .summary #over {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 140px;
+    }
+    .container .summary #over-1 {
+        font-size: 13px;
+        top: 161px;
+        margin-left: 140px;
+    }
+    .container .summary #over-2 {
+        font-size: 13px;
+        top: 224px;
+        margin-left: 140px;
+    }
+    .container .summary #over-3 {
+        font-size: 13px;
+        top: 287px;
+        bottom: 0px;
+        margin-left: 142px;
+    }
+    .container .summary input {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 235px) {
+    .container .result {
+        width: 150px;
+    }
+    .container .result .scores {
+        margin-left: 20px;
+        padding-top: 15px;
+        width: 100px;
+        height: 100px;
+    }
+    .container .result p {
+       font-size: 12px;
+       width: 120px;
+       margin-left: 15px;
+    }
+    .container .summary {
+        width: 150px;
+    }
+    .container .summary img {
+        margin-right: 5px;
+    }
+    .container .summary h4 {
+        font-size: 10px;
+    }
+    .container .summary strong {
+        margin-left: 13px;
+        font-size: 10px;
+    }
+    .container .summary #strong-1 {
+        margin-left: 17px;
+        font-size: 10px;
+    }
+    .container .summary #strong-2 {
+        margin-left: 25px;
+        font-size: 10px;
+    } .container .summary #strong-3 {
+        margin-left: 25px;
+        font-size: 10px;
+    }
+    .container .summary #over {
+        font-size: 10px;
+        margin-top: 6px;
+        margin-left: 100px;
+    }
+    .container .summary #over-1 {
+        font-size: 10px;
+        top: 163px;
+        margin-left: 100px;
+    }
+    .container .summary #over-2 {
+        font-size: 10px;
+        top: 225px;
+        margin-left: 100px;
+    }
+    .container .summary #over-3 {
+        font-size: 10px;
+        top: 288px;
+        bottom: 0px;
+        margin-left: 100px;
+    }
+    .container .summary input {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 180px) {
+    .container {
+        margin-left: 0px;
+    }
+    .container .result {
+        margin-left: 0px;
+        left: 10px;
+        width: 100px;
+    }
+    .container .result h3 {
+        font-size: 12px;
+    }
+    .container .result .scores{
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+    .container .result .scores h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .container .result p{
+        width: 80px;
+        margin-left: 10px;
+    }
+    .container .summary {
+        width: 100px;
+        left: 0px;
+        position: absolute;
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+    .container .summary img {
+        width: 15px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .container .summary h2 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .container .summary h4 {
+        font-size: 8px;
+    }
+    .container .summary strong {
+        margin-left: 13px;
+        font-size: 8px;
+    }
+    .container .summary #strong-1 {
+        margin-left: 17px;
+        font-size: 8px;
+    }
+    .container .summary #strong-2 {
+        margin-left: 18px;
+        font-size: 8px;
+    } .container .summary #strong-3 {
+        margin-left: 20px;
+        font-size: 8px;
+    }
+    .container .summary #over {
+        font-size: 8px;
+        top: 86px;
+        margin-left: 78px;
+    }
+    .container .summary #over-1 {
+        font-size: 8px;
+        top: 146px;
+        margin-left: 79px;
+    }
+    .container .summary #over-2 {
+        font-size: 8px;
+        top: 203px;
+        margin-left: 73px;
+    }
+    .container .summary #over-3 {
+        font-size: 8px;
+        top: 260px;
+        bottom: 0px;
+        margin-left: 75px;
+    }
+    .container .summary input {
+        width: 70px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+}
